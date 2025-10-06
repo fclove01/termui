@@ -1,0 +1,27 @@
+/* ===================================================
+   TermUI v1 — Alert
+   =================================================== */
+
+.alert {
+  border-radius: 0;
+  font-family: "JetBrains Mono", monospace;
+  border: 1px solid var(--border);
+  background: var(--input-bg);
+  color: var(--fg);
+  padding: 0.6rem 1rem;
+}
+
+.alert-success {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.alert-warning {
+  border-color: #ffaa00;
+  color: #ffaa00;
+}
+
+.alert-danger {
+  border-color: #ff4444;
+  color: #ff4444;
+}

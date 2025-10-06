@@ -1,0 +1,47 @@
+/* ===================================================
+   TermUI v1 — Table (Dark Theme)
+   =================================================== */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #000 !important;
+  color: #eee !important; /* chữ sáng rõ */
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.table thead {
+  background-color: #0f0f0f !important;
+  color: #0f0 !important; /* accent xanh lá */
+  text-transform: uppercase;
+}
+
+.table th,
+.table td {
+  border: 1px solid #222;
+  padding: 0.5rem 0.75rem;
+  background-color: #000 !important;
+  color: #eee !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #0a0a0a !important;
+  color: #eee !important;
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: #1a1a1a !important; /* xám đậm */
+  color: #0f0 !important; /* đổi chữ sang accent */
+  cursor: pointer;
+}
+
+.table-bordered {
+  border: 1px solid #333 !important;
+}
+
+.table-sm th,
+.table-sm td {
+  padding: 0.35rem 0.5rem;
+}

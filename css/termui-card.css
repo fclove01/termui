@@ -1,0 +1,31 @@
+/* ===================================================
+   TermUI v1 — Card (Dark Version)
+   =================================================== */
+
+.card {
+  background: #000;
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 0;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.card-header {
+  background: #0f0f0f;
+  border-bottom: 1px solid var(--border);
+  color: var(--accent);
+  font-weight: bold;
+  padding: 0.6rem 1rem;
+  text-transform: uppercase;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-footer {
+  border-top: 1px solid var(--border);
+  color: #777;
+  padding: 0.6rem 1rem;
+  font-size: 13px;
+}

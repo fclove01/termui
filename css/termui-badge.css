@@ -1,0 +1,19 @@
+/* ===================================================
+   TermUI v1 — Badge
+   =================================================== */
+
+.badge {
+  border-radius: 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 0.25em 0.5em;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+}
+
+.badge-secondary {
+  border-color: var(--accent-secondary);
+  color: var(--accent-secondary);
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>TermUI v1 Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="/css/termui.css"> -->
+  <link href="/css/termui-base.css" rel="stylesheet">
+  <link href="/css/termui-input.css" rel="stylesheet">
+  <link href="/css/termui-modal.css" rel="stylesheet">
+  <link href="/css/termui-alert.css" rel="stylesheet">
+  <link href="/css/termui-badge.css" rel="stylesheet">
+  <link href="/css/termui-tooltip.css" rel="stylesheet">
+  <link href="/css/termui-card.css" rel="stylesheet">
+  <link href="/css/termui-table.css" rel="stylesheet">
+</head>
+<body style="background:#0d0d0d; color:#e0e0e0; font-family:'JetBrains Mono', monospace;" class="p-4">
+
+  <div class="container">
+    <h2 style="color:#00ff9d;">TermUI v1 — Demo</h2>
+    <hr>
+
+    <h5 class="mt-4">Input & Select</h5>
+    <input type="text" class="form-control mb-2" placeholder="Username">
+    <!-- <textarea type="text" class="form-control mb-2" placeholder="Username"> -->
+    <select class="form-select mb-2">
+      <option>Developer</option>
+      <option>Designer</option>
+    </select>
+
+    <h5 class="mt-4">Checkbox & Radio</h5>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="check1">
+      <label class="form-check-label" for="check1">Remember me</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="r1" id="r1" checked>
+      <label class="form-check-label" for="r1">Option 1</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="r1" id="r2">
+      <label class="form-check-label" for="r2">Option 2</label>
+    </div>
+
+    <h5 class="mt-4">Alert & Badge</h5>
+    <div class="alert alert-success">Success alert!</div>
+    <div class="alert alert-danger">Error alert!</div>
+    <span class="badge">Default</span>
+    <span class="badge badge-secondary">Secondary</span>
+
+    <h5 class="mt-4">Tooltip</h5>
+    <button class="btn btn-outline-light" data-bs-toggle="tooltip" title="Tooltip test">Hover me</button>
+
+    <h5 class="mt-4">Modal</h5>
+    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#demoModal">Open Modal</button>
+
+    <div class="modal fade" id="demoModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">TermUI Modal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Nội dung modal theo phong cách terminal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Đóng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h5 class="mt-4">Card</h5>
+<div class="card mb-3">
+  <div class="card-header">System Log</div>
+  <div class="card-body">
+    <p>Initializing module...</p>
+    <p>Connection established ✅</p>
+  </div>
+  <div class="card-footer">Status: OK</div>
+</div>
+
+<h5 class="mt-4">Table</h5>
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Process</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>001</td>
+      <td>Initialize Core</td>
+      <td>✅ OK</td>
+    </tr>
+    <tr>
+      <td>002</td>
+      <td>Connect Socket</td>
+      <td>⚡ Active</td>
+    </tr>
+    <tr>
+      <td>003</td>
+      <td>Sync Config</td>
+      <td>🟢 Synced</td>
+    </tr>
+  </tbody>
+</table>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el));
+  </script>
+</body>
+</html>

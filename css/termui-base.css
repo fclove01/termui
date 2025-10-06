@@ -1,0 +1,115 @@
+/* terminal-base.css */
+/* ===================================================
+   TERMINAL UI v1 — Minimal Dev Style over Bootstrap
+   Author: You
+   =================================================== */
+
+/* ========== VARIABLES ========== */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  --bg: #0d0d0d;
+  --fg: #e0e0e0;
+  --accent: #00ff9d;
+  --border: #222;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "JetBrains Mono", monospace;
+  margin: 2rem;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: var(--accent);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* BUTTONS */
+.btn {
+  background: #111;
+  color: var(--fg);
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-accent {
+  background: var(--accent);
+  color: var(--bg);
+  border: 1px solid var(--accent);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+/* CARD */
+.card {
+  border: 1px solid var(--border);
+  background: #111;
+  margin-top: 1rem;
+}
+
+.card-header {
+  background: #161616;
+  border-bottom: 1px solid var(--border);
+  padding: 0.5rem;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+/* CHECKBOX */
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  display: inline-block;
+  position: relative;
+}
+
+.checkbox input:checked + span::after {
+  content: "✔";
+  position: absolute;
+  color: var(--accent);
+  font-size: 12px;
+  top: -2px;
+  left: 2px;
+}
